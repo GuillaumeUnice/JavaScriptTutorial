@@ -1,0 +1,45 @@
+{
+  "series": [
+    {
+      "id": 60883,
+      "title": "Lolita ♥ Lolita ♥",
+      "number_episode": 6,
+      "season": 1,
+      "synopsis": null,
+      "added": true,
+      "current_episode": 5
+    },
+    {
+      "id": 9058,
+      "title": "K",
+      "number_episode": 0,
+      "season": 0,
+      "synopsis": null,
+      "added": true,
+      "current_episode": 0
+    },
+    {
+      "id": 63972,
+      "title": "Project K",
+      "number_episode": 4,
+      "season": 1,
+      "synopsis": null,
+      "added": true,
+      "current_episode": 11
+    },
+    {
+      "id": 18863,
+      "title": "L'ispettore Coliandro",
+      "season": 5,
+      "current_episode": 0,
+      "added": true
+    },
+    {
+      "id": 30956,
+      "title": "Land Girls",
+      "season": 3,
+      "current_episode": 0,
+      "added": true
+    }
+  ]
+}
