@@ -1,0 +1,96 @@
+ <section>
+    <h3>AJAX</h3>
+    <p>
+        Asynchronous JavaScript And XML
+    </p>
+</section>
+ <section>
+    <h3>Schema without AJAX</h3>
+    <img src="images/ajax_schema_1.png" style="border: none;" alt="Javascript without AJAX schema" />
+</section>
+ <section>
+    <h3>Schema with AJAX</h3>
+    <img src="images/ajax_schema_2.png" style="border: none;" alt="Javascript AJAX schema" />
+</section>
+
+ <section>
+        <h3>JavaScript XMLHttpRequest</h3>
+        <p>XHR JavaScript Object with main goal</p>
+        <ul>
+            <li>Send request to server</li>
+            <li>Have got an handler to recup response</li>
+        </ul>
+</section>
+
+ <section>
+    <h3>JavaScript XMLHttpRequest Send</h3>
+
+    <pre><code class="hljs" data-trim contenteditable>
+        // GET request
+        var xhr = new XMLHttpRequest();
+        xhr.open(‘GET’, ‘http://localhost:3004/series’, true);
+        xhr.send(null);
+    </code></pre>
+
+    <pre><code class="hljs" data-trim contenteditable>
+        // GET request with query params
+        var username = encodeURIComponent(username),
+        xhr.open(‘GET’, ‘http://localhost:3004/series?username=’ + username, true);
+    </code></pre>
+
+    <pre><code class="hljs" data-trim contenteditable>
+        // POST request with body params
+        xhr.open('POST', 'http://localhost:3004/series', true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.send(title=' + title + '&synopsis=' + synopsis);
+    </code></pre>
+</section>
+
+ <section>
+    <h3>JavaScript XMLHttpRequest reception</h3>
+    <pre><code class="hljs" data-trim contenteditable>
+        xhr.addEventListener('readystatechange', function() {
+            if (xhr.readyState === XMLHttpRequest.DONE
+            && xhr.status === 200) {
+                // Our code…
+            // var response = JSON.parse(xhr.responseText);
+            }
+
+        });
+    </code></pre>
+</section>
+
+ <section>
+    <h3>JavaScript XMLHttpRequest 2</h3>
+    <p style="font-size: 0.7em;">
+        Cross site request
+        <br>
+        Principle of same origin policy :
+        <blockquote style="font-size: 1.2em;">'Access-Control-Allow-Origin: *'</blockquote>
+        <span style="font-size: 0.7em;">Send Cookie/Session XHR :</span>
+        <blockquote style="font-size: 1.2em;">
+            ‘Access-Control-Allow-Credentials: true’
+            <br>
+            frontend: xhr.withCredentials = true;
+        </blockquote>
+    </p>
+</section>
+
+<section>
+    <h3>JavaScript Form Data</h3>
+    <p><strong>TODO RESUME App</strong></p>
+</section>
+
+<section>
+    <h3>ES6 Fetch</h3>
+    <p style="font-size: 0.8em">
+        The Fetch API provides a JavaScript interface for accessing and manipulating parts of the HTTP pipeline, such as requests and responses.
+    </p>
+    <p style="font-size: 0.8em">
+        It also provides a global fetch() method that provides an easy, logical way to fetch resources asynchronously across the network.
+    </p>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/9rzg7f8w/" target="_blank">Here</a>
+    </p>
+</section>
+

@@ -1,0 +1,81 @@
+<section>
+  <h3>Overview</h3>
+  <ul>
+    <li>It's an interpreted language</li>
+    <li>Both client-side &amp server-side behaviour</li>
+    <li>ECMAScript standard (ES5, ES6, shortly ES7)</li>
+  </ul>
+</section>
+<section>
+  <h3>Reminder</h3>
+  <ul>
+    <li>Scripting language multi-paradigm</li>
+    <li>Weakly typed programming</li>
+  </ul>
+  <pre><code class="hljs" data-trim contenteditable>
+    // primitive type
+    string, number, boolean
+
+    // but also ...
+    undefined, null, NaN
+  </code></pre>
+</section>
+<section>
+  <h3>JavaScript Object</h3>
+  <ul>
+    <li>
+      In JavaScript, an object is a set of properties
+    </li>
+    <li>
+      A property has a name and a value
+    </li>
+    <li>
+      A property can be a method or an instance variable
+    </li>
+  </ul>
+  <pre><code class="hljs" data-trim contenteditable>
+    // Literal Object:
+    var myObj = {
+      propertyName: “propertyValue”
+    };
+
+    // Access property:
+    myObj.propertyName;
+    myObj[‘propertyName’];
+  </code></pre>
+</section>
+<section>
+  <h3>JSON Array</h3>
+  <pre><code class="hljs" data-trim contenteditable>
+    var movies = ["Tron", "Matrix"];
+    movies.push("Inception");
+
+    for (var i = 0; i < movies.length; i++) {
+        console.log(movies[i]);
+    }
+    // #############################################""
+    movies.forEach(function (movie) {
+        console.log(movie);
+    });
+  </code></pre>
+</section>
+<section>
+  <h3>JSON = JavaScript Object Notation</h3>
+  <pre><code class="hljs" data-trim contenteditable>
+    {} => object
+
+    [] => array
+  </code></pre>
+</section>
+<section>
+  <h3>JS Print Function</h3>
+  <pre><code class="hljs" data-trim contenteditable>
+    console.log()
+    console.warn()
+    console.error()
+    console.dir()
+
+    console.time("toto")
+    console.timeEnd("toto")
+  </code></pre>
+</section>

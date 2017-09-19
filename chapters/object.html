@@ -1,0 +1,80 @@
+<section>
+  <h3>JavaScript OOP style with Prototype</h3>
+  <p>
+    A few ways to declare an new object:
+  </p>
+  <pre><code class="hljs" data-trim contenteditable>
+    // literal object
+    var myObj = { propertyName: “propertyValue”};
+    //  => prototype from Object.prototype
+
+    // Clone
+    var anotherObj = Object.create(myObj);
+    // => prototype from myObj
+    Object.getPrototypeOf(anotherObj) === myObj; // true
+  </code></pre>
+  <p>
+    Method available on prototype is a method available for all same object type
+    <br>
+    Every object instantiated own automatically a sub-object called prototype
+  </p>
+  <p style="font-size: 2em">
+      <a href="//jsfiddle.net/Echyzen/xg8k4ckn/" target="_blank">Here</a>
+  </p>
+</section>
+
+<section>
+  <h3>JavaScript Object Class like</h3>
+  <p>
+    JavaScript are Object and can be use to define new objects thangs to <em>"new"</em> operator
+    <br>
+    They become <strong>constructor</strong> owing to an alternative to litteral object
+    <br>
+    By convention this kind of function keep an first letter upper case.
+  </p>
+  <p style="font-size: 2em">
+      <a href="//jsfiddle.net/Echyzen/zmxg7pke/1/" target="_blank">Here</a>
+  </p>
+</section>
+
+<section>
+  <h3>JavaScript Object Inheritance</h3>
+  <p style="font-size: 2em">
+      <a href="//jsfiddle.net/Echyzen/zmxg7pke/3/" target="_blank">Here</a>
+  </p>
+</section>
+
+<section>
+  <h3>ES6 JavaScript Object.assign()</h3>
+
+  La nouvelle méthode statique Object.assign prend en paramètres une série d'objets :
+  <p>Description:</p>
+  <ul>
+    <li>First arguments it's the "target"</li>
+    <li>Other arguments are "sources"</li>
+    <li>Every own properties the latters overwrite the formers</li>
+    <li>Finally a reference of the "target" is returned</li>
+  </ul>
+  <!--var myObj = { propertyName: "propertyValue"};
+  var t = Object.assign(myObj, {l:4})
+  console.warn(t)
+  myObj.propertyName = "foo"
+  console.warn(t)
+  console.warn(myObj)
+  var r = Object.assign({}, myObj, {p:2})
+  console.warn(r)
+  myObj.propertyName = "foosss"
+  console.warn(r)-->
+  <p style="font-size: 2em">
+      <a href="//jsfiddle.net/Echyzen/yh72zLxc/" target="_blank">Here</a>
+  </p>
+</section>
+
+
+<section>
+  <h3>ES6 JavaScript Class</h3>
+  <p style="font-size: 2em">
+      <a href="//jsfiddle.net/Echyzen/tujaz58h/1/" target="_blank">Here</a>
+      <!-- inutile without inheritance ES5 -->
+  </p>
+</section>

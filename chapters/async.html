@@ -1,0 +1,39 @@
+<section>
+    <h3>Callback</h3>
+    <p>
+      A callback is a function A passed in param of another function B.
+      <br>
+      Thanks to this, the function B could be use and call the function A without know in advance thus the function B executes dynamic code.
+    </p>
+    <p><strong>Live Example on NodeJS</strong></p>
+</section>
+ <section>
+    <h3>ES6 Promise</h3>
+		<pre><code class="hljs" data-trim contenteditable>
+      // Callback
+      step1(value, function(data){
+        step2(data, function(data2){
+          step3(data2, function(data3){
+            step4(data3, function(data4){
+              //INSTRUCTIONS
+            });
+          });
+        });
+      });
+
+      // Promise
+      step1.then(step2) .then(step3) .then(step4)
+    </code></pre>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/uhhr8amz/1/" target="_blank">Here</a>
+    </p>
+</section>
+ <section>
+    <h3>ES6 Async (await)</h3>
+    <p>
+      Try to recreate a synchronous context where you want. Real gain in legibility
+    </p>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/qeb28hym/" target="_blank">Here</a>
+    </p>
+</section>

@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="icon" href="images/favicon.ico" />
+
+		<title>Echyzen GraphQL Tutorial</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/simple.css">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="import" id="link_prerequiste" href="chapters/prerequiste.html">
+		<link rel="import" id="link_history" href="chapters/history.html">
+		<link rel="import" id="link_function" href="chapters/function.html">
+		<link rel="import" id="link_hoisting" href="chapters/hoisting.html">
+		<link rel="import" id="link_object" href="chapters/object.html">
+		<link rel="import" id="link_async" href="chapters/async.html">
+		<link rel="import" id="link_namespace" href="chapters/namespace.html">
+		<link rel="import" id="link_use_strict" href="chapters/use_strict.html">
+		<link rel="import" id="link_dom" href="chapters/dom.html">
+		<link rel="import" id="link_ajax" href="chapters/ajax.html">
+		<link rel="import" id="link_jquery" href="chapters/jquery.html">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section data-background-color="#F8DA59">
+					<img src="images/javascript-animation.gif" style="border: none;" alt="Javascript image" />
+					<p>JavaScript Introduction</p>
+				</section>
+
+				<section id="prerequiste"></section>
+				<section id="history"></section>
+				<section id="function"></section>
+				<section id="hoisting"></section>
+				<section id="object"></section>
+				<section id="async"></section>
+				<section id="namespace"></section>
+				<section id="use_strict"></section>
+				<section id="dom"></section>
+				<section id="ajax"></section>
+				<section id="jquery"></section>
+			</div>
+
+			<footer id="footer" class="animated-middle">
+				<ul class="icons">
+					<li><a href="https://github.com/GuillaumeUnice" class="icon" target="_blank"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UC2Y0v3L_J9wTFkkqnLuCDGg" class="icon" target="_blank"><i class="fa fa-youtube"></i></a></li>
+					<li><a href="https://twitter.com/EchyzenWebsite" class="icon" target="_blank"><i class="fa fa-twitter"></i></a></li>
+					<!--<li><a href="https://vimeo.com/user13696089" class="icon" target="_blank"><i class="fa fa-vimeo-square"></i></a></li>
+					<li><a href="https://uk.pinterest.com/guillaumeunice/" class="icon" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/guillaume-borg-0904b8a8" class="icon" target="_blank"><i class="fa fa-linkedin"></i></a></li>-->
+				</ul>
+			</footer>
+		</div>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/web_component/HTMLImports.min.js"></script>
+		<!--<script src="js/web_component/CustomElements.min.js"></script>
+		<script src="js/web_component/MutationObserver.min.js"></script>
+
+		<script src="js/web_component/webcomponents.min.js"></script>-->
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+		<script>
+			document.addEventListener( 'HTMLImportsLoaded', function ()
+			{
+				document.getElementById("prerequiste").innerHTML = document.getElementById('link_prerequiste').import.body.innerHTML;
+				document.getElementById("history").innerHTML = document.getElementById('link_history').import.body.innerHTML;
+				document.getElementById("function").innerHTML = document.getElementById('link_function').import.body.innerHTML;
+				document.getElementById("hoisting").innerHTML = document.getElementById('link_hoisting').import.body.innerHTML;
+				document.getElementById("object").innerHTML = document.getElementById('link_object').import.body.innerHTML;
+				document.getElementById("async").innerHTML = document.getElementById('link_async').import.body.innerHTML;
+				document.getElementById("namespace").innerHTML = document.getElementById('link_namespace').import.body.innerHTML;
+				document.getElementById("use_strict").innerHTML = document.getElementById('link_use_strict').import.body.innerHTML;
+				document.getElementById("dom").innerHTML = document.getElementById('link_dom').import.body.innerHTML;
+				document.getElementById("ajax").innerHTML = document.getElementById('link_ajax').import.body.innerHTML;
+				document.getElementById("jquery").innerHTML = document.getElementById('link_jquery').import.body.innerHTML;
+			})
+		</script>
+	</body>
+</html>

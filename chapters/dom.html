@@ -1,0 +1,72 @@
+<section>
+    <h3>BOM vs DOM</h3>
+    <ul style="font-size: 0.8em;">
+        <li>The core (based on ECMAScript spec)</li>
+        <li>
+            The Document Object Model (aka DOM):
+            <br>
+            <span style="font-size: 0.8em;">
+                Maps out an entire page as a document of a hierarchy of nodes like a tree structure  and it allow some operations like removed, added and replaced.
+                <blockquote> Object: window.document</blockquote>
+            </span>
+        </li>
+        <li>
+            The Browser Object Model (aka BOM):
+            <br>
+            <span style="font-size: 0.8em;">
+                It allows to access and manipulate browser’s window.
+                <blockquote>JS Object: window.navigator, window.history, window.screen, window.location</blockquote>
+            </span>
+        </li>
+    </ul>
+</section>
+<section>
+    <h3>JavaScript Selector</h3>
+    https://christianheilmann.com/stuff/JavaScript-DOM-Cheatsheet.pdf
+    <pre><code class="hljs" data-trim contenteditable>
+        var matches = document.getElementsByTagName("p");
+        var matches = document.getElementByClassName('para');
+        var elem = document.getElementById('para');
+
+        var el = document.querySelector(".myclass");
+        var matches = document.querySelectorAll("div#note, div#alert");
+    </code></pre>
+    <!--https://www.alsacreations.com/article/lire/1445-dom-queryselector-queryselectorall-selectors-api.html-->
+</section>
+<section>
+    <h3>JavaScript Event</h3>
+    <blockquote>onclick | onchange | onmouseover | onmouseout | onkeydown</blockquote>
+    <pre><code class="hljs" data-trim contenteditable>
+        <tag onclick="myFunction()">......</tag>
+        object.onclick = function(){myScript};
+        object.addEventListener("click", myScript);
+    </code></pre>
+    <!--
+        http://themousepotatowebsite.co.za/javascript-events-capturing-and-bubbling/
+        https://www.alsacreations.com/article/lire/578-La-gestion-des-evenements-en-JavaScript.html
+    -->
+</section>
+<section>
+    <h3>JavaScript DOM Manipulation</h3>
+    <blockquote>createElement | createTextNode | appendChild | insertBefore | insertAfter</blockquote>
+    <pre><code class="hljs" data-trim contenteditable>
+        document.getElementById("divA").textContent = "Ceci est un exemple de texte";
+        document.getElementById("divA").innerHTML = "<p>Ceci est un exemple de texte</p>";
+    </code></pre>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/6zd0L583/" target="_blank">Here</a>
+    </p>
+</section>
+
+
+<section>
+    <h3>JavaScript Traversing</h3>
+    <blockquote>parentNode | childNodes[nodenumber] | firstChild | lastChild | nextSibling | previousSibling</blockquote>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/y0yahf4c/" target="_blank">Here</a>
+    </p>
+    <!--<p style="font-size: 2em">
+       <a href="//jsfiddle.net/augburto/7xp4d1au/" target="_blank">TODO</a>
+    </p>-->
+</section>
+
