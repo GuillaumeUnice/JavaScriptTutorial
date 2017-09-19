@@ -1,0 +1,72 @@
+<section>
+  <h3>JavaScript OOP style with Prototype instead of Classe</h3>
+  <p style="font-size: 0.5em">
+    Do you know the analogy between a class and a plan?
+    <br>
+    A class is an object type plan
+    <br>
+    We use that plan to create new instances
+    <br><br>
+    In prototype-based OOP, we don’t use plan
+    <br>
+    We create objects from scratch or based on other objects (prototype)
+	</p>
+  <p>
+    => method available on prototype is a method available for all same object type
+  </p>
+  <p>
+    A few ways to declare an new object:
+  </p>
+  <pre><code class="hljs" data-trim contenteditable>
+    // literal object
+    var myObj = { propertyName: “propertyValue”};
+    //  => prototype from Object.prototype
+
+    // Clone
+    var anotherObj = Object.create(myObj);
+    // => prototype from myObj
+    Object.getPrototypeOf(anotherObj) === myObj; // true
+  </code></pre>
+  <p style="font-size: 0.7em">
+    Method available on prototype is a method available for all same object type
+    <br>
+    Every object instantiated own automatically a sub-object called prototype
+  </p>
+  <p style="font-size: 2em">
+      <a href="//jsfiddle.net/Echyzen/xg8k4ckn/" target="_blank">Here</a>
+  </p>
+  <img src="images/prototype_chain_exo.png" style="border: none;" width="650" alt="JavaScript protorype chain correction" />
+</section>
+
+<section>
+  <h3>JavaScript Object Class like</h3>
+  <p style="font-size: 0.5em">
+    JavaScript are Object and can be use to define new objects thangs to <em>"new"</em> operator
+    <br>
+    They become <strong>constructor</strong> owing to an alternative to litteral object
+  </p>
+  <p style="font-size: 0.5em">
+    By convention this kind of function keep an first letter upper case.
+    <br>
+    != sémantique entre fonction et méthode. Une fonction n’est pas rattaché a un objet encore qu’il y a Window et Document du DOM et BOM
+    <br>
+    Tandis qu’une méthode est forcément précédé du nom ou de l’instance d’une classe.     car
+  </p>
+  <p style="font-size: 2em">
+      <a href="//jsfiddle.net/Echyzen/zmxg7pke/1/" target="_blank">Here</a>
+  </p>
+  <p style="font-size: 0.5em">
+    Tout objet instancié possède automatiquement un sous-objet appelé prototype.
+    <br>
+    L’avantage de l’héritage prototypale est qu’il va permettre de modifier l’ensemble des objets même ceux déjà instancié.
+    <br>
+    En effet, ici les méthode déclaré par prototype ne sont pas copié au sein des instances mais reste au sein de l’objet constructeur.
+    <br>
+    Ainsi chaque instance sera en mesure de le récupérer au près du constructeur même en étant instancié en amont.
+  </p>
+  <p style="font-size: 0.5em">
+    Possibilité avec cette héritage prototypale de modifier les objets natifs en ajoutant des fonctions string, number etc.
+    <br>
+    Ainsi il est a noté que du coup on peut écraser les méthodes existante en redéfinissant les méthodes natives des objets ce qui rend possible l’utilisation de polyfill.
+  </p>
+</section>

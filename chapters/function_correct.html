@@ -1,0 +1,41 @@
+<section>
+    <h3>JavaScript Functionnal Programming</h3>
+    <p><a href="//jsfiddle.net/Echyzen/ebc64gyp/" target="_blank">Introduction</a></p>
+    <ul>
+      <li>functions can be assigned to variables or stored in data structures <a href="//jsfiddle.net/Echyzen/oakq1hvL/" target="_blank">Here</a></li>
+      <li>passed as arguments to other functions <a href="//jsfiddle.net/Echyzen/q7sqho4n/" target="_blank">Here</a></li>
+      <li>returned as the values from other functions <a href="//jsfiddle.net/Echyzen/mLewfme5/" target="_blank">Here</a></li>
+      <li>A function define as a value of a Object's property is called a <strong>method</strong> <a href="//jsfiddle.net/Echyzen/0494o8nc/" target="_blank">Here</a></li>
+      <li>primitive argument VS Object argument <a href="//jsfiddle.net/Echyzen/fhdteroq/" target="_blank">Here</a></li>
+    </ul>
+</section>
+<section>
+    <h3>JavaScript Scope</h3>
+    <ul>
+      <li>All function have access to extern context (==> functions that use extern variables are called closure because depend on extern context)</li>
+      <li><strong>var</strong> means declare a variable in the current context otherwise use global context</li>
+      <li><strong>Global Variable:</strong> reachable in the whole document</li>
+      <li><strong>Local Variable:</strong> reachable only inside the function</li>
+    </ul>
+    <p>
+      <strong>function = scope</strong>
+	    <em>(Not block like in Java  or C#)</em>
+    </p>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/cez9yzcg/1/" target="_blank">Here</a>
+    </p>
+</section>
+
+<section>
+    <h3>JavaScript Function manipulation context</h3>
+    <p>
+      <strong>call() | apply()</strong> call the function immediately with a specific context attached.
+      <br>
+      whereas <strong>bind()</strong> returns a function that when later executed will have the correct context set for calling the original function.
+      <br>
+      This way you can maintain context in async callbacks, and events so very useful.
+    </p>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/gcrvbaw7/" target="_blank">Here</a>
+    </p>
+</section>

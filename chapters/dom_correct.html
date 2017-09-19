@@ -1,0 +1,46 @@
+<section>
+    <h3>BOM vs DOM</h3>
+    <p>
+        Le moteur JavaScript d’un navigateur est composé de 3 parties :
+    </p>
+    <ul>
+        <li>Le coeur est ce qui ne va pas différer peu importe l’hôte de JavaScript que l’on soit dans un hôte WebBrowser ou Acrobat ou encore dans Node</li>
+        <li>Le DOM est une API HTML au même titre des nouvelle que l’on vient de présenter. Le DOM n’est pas une spécificité JavaScript il a été implémenté dans de nombreux autres langages néanmoins au niveau du WebBrowser c’est la norme de ECMAScript et donc JS qui est utilisé</li>
+        <li>Le BOM est au niveau au dessus il permet l’interaction avec la fenêtre du navigateur pas le document en lui même.</li>
+    </ul>
+</section>
+
+
+<section>
+    <h3>JS Traversing I</h3>
+    <p>
+        Ce sont la list des prorpriétés les plus utilisées.
+    </p>
+    <a href="//developer.mozilla.org/fr/docs/Web/API/Node/nextSibling" target="_blank" >nextSibling</a>
+</section>
+
+<section>
+    <h3>JS Traversing II: The nodeName Property</h3>
+    <p>
+        The nodeName property specifies the name of a node.
+    </p>
+    <ul>
+        <li>nodeName is read-only</li>
+        <li>nodeName of an element node is the same as the tag name</li>
+        <li>nodeName of an attribute node is the attribute name</li>
+        <li>nodeName of a text node is always #text</li>
+        <li>nodeName of the document node is always #document</li>
+    </ul>
+</section>
+
+<section>
+    <h3>JS Traversing III: The nodeValue Property</h3>
+    <p>
+        The nodeValue property specifies the value of a node.
+    </p>
+    <ul>
+        <li>nodeValue for element nodes is undefined</li>
+        <li>nodeValue for text nodes is the text itself</li>
+        <li>nodeValue for attribute nodes is the attribute value</li>
+    </ul>
+</section>

@@ -1,0 +1,46 @@
+<section>
+    <h3>Callback</h3>
+    <p>
+      A callback is a function A passed in param of another function B.
+      <br>
+      Thanks to this, the function B could be use and call the function A without know in advance thus the function B executes dynamic code.
+    </p>
+    <p>TODO: 06_callback.js</p>
+</section>
+ <section>
+    <h3>ES6 Promise</h3>
+		<pre><code class="hljs" data-trim contenteditable>
+      // Callback
+      step1(value, function(data){
+        step2(data, function(data2){
+          step3(data2, function(data3){
+            step4(data3, function(data4){
+              //INSTRUCTIONS
+            });
+          });
+        });
+      });
+
+      // Promise
+      step1.then(step2) .then(step3) .then(step4)
+    </code></pre>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/uhhr8amz/1/" target="_blank">Here</a>
+    </p>
+    <p>
+      Promesse : JavaScript est asynchrone l’attente de données nécessite l’utilisation de callback.
+      <br>
+      Une promesse au sens JavaScript est une fonctionnalité permettant de retourner des callbacks en cas de succès ou d’erreur.
+      <br>
+      Il y a un avantage purement syntaxique à pouvoir chaîner les promesses les unes à la suite des autres plutôt qu’utiliser une imbrication de callback.
+    </p>
+</section>
+ <section>
+    <h3>ES6 Async (await)</h3>
+    <p>
+      Try to recreate a synchronous context where you want. Real gain in legibility
+    </p>
+    <p style="font-size: 2em">
+       <a href="//jsfiddle.net/Echyzen/qeb28hym/" target="_blank">Here</a>
+    </p>
+</section>

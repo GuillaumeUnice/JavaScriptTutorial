@@ -1,0 +1,27 @@
+<section>
+    <h3>JavaScript hoisting</h3>
+    <ul>
+      <li>Declarations are evaluated before any instructions in the same context</li>
+      <li>Expressions are evaluated after all the instructions preceding it</li>
+    </ul>
+    <pre><code class="hljs" data-trim contenteditable>
+      var a;
+      console.log(a);
+      a = “a”;
+
+      var demo;
+      demo = function() {
+      }
+    </code></pre>
+    <p><a href="//jsfiddle.net/Echyzen/v3vyL46r/" target="_blank">Here</a></p>
+    <p>
+      En générale on lit un script et on se dit l’ordinateur va l’écrire de haut de bas,
+      <br>
+      ce n’est pas forcément le cas le compilateur Javascript
+      <br>
+      L’hoisting signifie que le moteur JavaScript récupère toute les définition de variable est les places tout en haut en début de script
+      <br>
+      utiliser plutôt la notation avec mot clé var pour pas avoir de soucis de context
+      c = 3; va faire le hoisting aussi
+    </p>
+</section>
